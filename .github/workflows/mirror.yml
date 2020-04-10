@@ -10,7 +10,7 @@ jobs:
     steps:
     - name: Mirror
       run: |
-        git clone --mirror '$REPO'
+        git clone --mirror 'https://github.com/ThatFruedDued/okremu.git'
         cd mux.git/
         git remote add github "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git"
         git push --mirror github
